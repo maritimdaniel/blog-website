@@ -1,0 +1,15 @@
+main {
+  .card {
+    padding: 2.25rem;
+    margin-bottom: 1.5rem;
+
+    p,
+    h4 {
+      line-height: 1.5;
+    }
+    h4 {
+      font-size: 1.25rem;
+      color: black;
+    }
+  }
+}

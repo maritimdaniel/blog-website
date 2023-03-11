@@ -1,0 +1,22 @@
+main {
+  .blog-post {
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    .post-body {
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      .post-content {
+        max-width: 420px;
+      }
+    }
+    .post-information {
+      justify-content: space-between;
+      font-size: 0.9rem;
+      .name {
+        color: black;
+        font-weight: 700;
+        margin: 0 0.7rem;
+      }
+    }
+  }
+}

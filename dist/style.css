@@ -129,6 +129,9 @@ main .flex {
 main .center {
   align-items: center;
 }
+main .start {
+  align-items: flex-start;
+}
 
 main .line {
   width: 100%;
@@ -186,4 +189,38 @@ main .aside.right .projects h4 {
 }
 main .aside.right .projects div:not(.line) {
   margin-top: 10px;
+}
+
+main .card {
+  padding: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+main .card p,
+main .card h4 {
+  line-height: 1.5;
+}
+main .card h4 {
+  font-size: 1.25rem;
+  color: black;
+}
+
+main .blog-post {
+  border: 1px solid #dadada;
+  border-radius: 7px;
+}
+main .blog-post .post-body {
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+main .blog-post .post-body .post-content {
+  max-width: 420px;
+}
+main .blog-post .post-information {
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+main .blog-post .post-information .name {
+  color: black;
+  font-weight: 700;
+  margin: 0 0.7rem;
 }/*# sourceMappingURL=style.css.map */
