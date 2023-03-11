@@ -150,4 +150,40 @@ main .aside.left div:hover:not(.line) {
 }
 main .aside.left div p {
   margin: 0 10px;
+}
+
+main .aside.right {
+  margin-left: 3rem;
+}
+main .aside.right form {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+main .aside.right form input {
+  width: 100%;
+  padding: 18px 56px 18px 17px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #70747d;
+  border: 1px solid #dadada;
+  border-radius: 7px;
+}
+main .aside.right form input:focus {
+  border: 2px solid black;
+}
+main .aside.right form img {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+main .aside.right .projects {
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  padding: 1.5rem;
+}
+main .aside.right .projects h4 {
+  color: black;
+}
+main .aside.right .projects div:not(.line) {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+main {
+  .aside.right {
+    margin-left: 3rem;
+    form {
+      position: relative;
+      margin-bottom: 1.5rem;
+      input {
+        width: 100%;
+        padding: 18px 56px 18px 17px;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #70747d;
+        border: 1px solid #dadada;
+        border-radius: 7px;
+      }
+      input:focus {
+        border: 2px solid black;
+      }
+      img {
+        position: absolute;
+        top: 30%;
+        right: 10%;
+      }
+    }
+    .projects {
+      border: 1px solid #dadada;
+      border-radius: 7px;
+      padding: 1.5rem;
+      h4 {
+        color: black;
+      }
+      div:not(.line) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
