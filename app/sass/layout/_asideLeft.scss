@@ -1,0 +1,18 @@
+main {
+  .aside.left {
+    margin-right: 3rem;
+    div:not(.line) {
+      padding: 14px 16px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    div:hover:not(.line) {
+      background: #f3f5f7;
+    }
+    div {
+      p {
+        margin: 0 10px;
+      }
+    }
+  }
+}

@@ -121,4 +121,33 @@ button {
 
 .btn:hover {
   background-color: #252525;
+}
+
+main .flex {
+  display: flex;
+}
+main .center {
+  align-items: center;
+}
+
+main .line {
+  width: 100%;
+  height: 1px;
+  margin: 16px 0;
+  background: #dadada;
+}
+
+main .aside.left {
+  margin-right: 3rem;
+}
+main .aside.left div:not(.line) {
+  padding: 14px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .aside.left div:hover:not(.line) {
+  background: #f3f5f7;
+}
+main .aside.left div p {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
