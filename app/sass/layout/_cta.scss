@@ -1,0 +1,28 @@
+main {
+  .call-to-action {
+    color: black;
+    justify-content: space-between;
+    position: relative !important;
+    background: #f6ca45;
+    .cta-body {
+      max-width: 420px;
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+      button {
+        padding: 16px 21px;
+        margin-right: 10px;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 main {
   .aside.left {
-    margin-right: 3rem;
+    flex: 1;
+    margin-right: 3.5rem;
     div:not(.line) {
       padding: 14px 16px;
       border-radius: 7px;

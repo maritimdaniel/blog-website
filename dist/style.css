@@ -59,7 +59,7 @@ li:last-child {
 }
 
 .container {
-  width: 81.25rem;
+  max-width: 81.25rem;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -110,6 +110,7 @@ header .logo {
 
 button {
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn {
@@ -123,6 +124,9 @@ button {
   background-color: #252525;
 }
 
+main .main-content__wraper {
+  justify-content: space-between;
+}
 main .flex {
   display: flex;
 }
@@ -141,7 +145,8 @@ main .line {
 }
 
 main .aside.left {
-  margin-right: 3rem;
+  flex: 1;
+  margin-right: 3.5rem;
 }
 main .aside.left div:not(.line) {
   padding: 14px 16px;
@@ -156,28 +161,21 @@ main .aside.left div p {
 }
 
 main .aside.right {
-  margin-left: 3rem;
+  flex: 2;
+  margin-left: 3.5rem;
 }
 main .aside.right form {
   position: relative;
   margin-bottom: 1.5rem;
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  padding: 18px 17px 18px 17px;
 }
 main .aside.right form input {
   width: 100%;
-  padding: 18px 56px 18px 17px;
   font-size: 14px;
   line-height: 1.2;
   color: #70747d;
-  border: 1px solid #dadada;
-  border-radius: 7px;
-}
-main .aside.right form input:focus {
-  border: 2px solid black;
-}
-main .aside.right form img {
-  position: absolute;
-  top: 30%;
-  right: 10%;
 }
 main .aside.right .projects {
   border: 1px solid #dadada;
@@ -204,6 +202,9 @@ main .card h4 {
   color: black;
 }
 
+main .main-content {
+  flex: 10;
+}
 main .blog-post {
   border: 1px solid #dadada;
   border-radius: 7px;
@@ -223,4 +224,47 @@ main .blog-post .post-information .name {
   color: black;
   font-weight: 700;
   margin: 0 0.7rem;
+}
+
+main .call-to-action {
+  color: black;
+  justify-content: space-between;
+  position: relative !important;
+  background: #f6ca45;
+}
+main .call-to-action .cta-body {
+  max-width: 420px;
+}
+main .call-to-action .cta-body p {
+  margin-bottom: 1.5rem;
+}
+main .call-to-action .cta-body button {
+  padding: 16px 21px;
+  margin-right: 10px;
+}
+main .call-to-action .cta-body span {
+  font-size: 0.9rem;
+}
+main .call-to-action img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .next-page {
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+main .next-page p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 33px;
+  cursor: pointer;
+}
+main .next-page .previous,
+main .next-page .next {
+  font-weight: 700;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

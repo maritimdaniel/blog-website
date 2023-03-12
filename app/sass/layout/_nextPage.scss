@@ -1,0 +1,19 @@
+main {
+  .next-page {
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      width: 33px;
+      cursor: pointer;
+    }
+    .previous,
+    .next {
+      font-weight: 700;
+      color: black;
+    }
+  }
+}
