@@ -147,6 +147,11 @@ header {
   background: white;
   transition: 150ms ease;
 }
+@media (max-width: 31.25em) {
+  header {
+    padding: 30px 0;
+  }
+}
 
 .sticky {
   padding: 20px 0;
@@ -172,6 +177,16 @@ button {
 main {
   display: block;
   margin-top: 9rem;
+}
+@media (max-width: 62.5em) {
+  main {
+    margin-top: 7rem;
+  }
+}
+@media (max-width: 31.25em) {
+  main {
+    margin-top: 6rem;
+  }
 }
 main .main-content__wraper {
   justify-content: space-between;

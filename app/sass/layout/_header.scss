@@ -75,6 +75,9 @@ header {
   line-height: 1.2;
   background: white;
   transition: 150ms ease;
+  @include u.breakpoint("500") {
+    padding: 30px 0;
+  }
 }
 
 .sticky {

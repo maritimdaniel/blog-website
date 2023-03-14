@@ -1,6 +1,13 @@
+@use "../utils/" as u;
 main {
   display: block;
   margin-top: 9rem;
+  @include u.breakpoint("1000") {
+    margin-top: 7rem;
+  }
+  @include u.breakpoint("500") {
+    margin-top: 6rem;
+  }
   .main-content__wraper {
     justify-content: space-between;
   }
