@@ -1,7 +1,22 @@
+@use "../utils/" as u;
 main {
   .card {
     padding: 2.25rem;
     margin-bottom: 1.5rem;
+    @include u.breakpoint("1120") {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include u.breakpoint("900") {
+      width: 90%;
+    }
+    @include u.breakpoint("800") {
+      width: 100%;
+    }
+    @include u.breakpoint("500") {
+      padding: 2rem;
+    }
     p,
     h4 {
       line-height: 1.5;

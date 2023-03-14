@@ -18,3 +18,8 @@ body {
   color: #70747d;
   font-family: "Inter", sans-serif;
 }
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}

@@ -1,4 +1,5 @@
-//general header styles
+@use "../utils/" as u;
+
 header {
   .container,
   .navigation,
@@ -12,7 +13,6 @@ header {
   }
 }
 
-//logo
 header {
   padding: 2.5rem 0;
   .logo {
@@ -22,17 +22,28 @@ header {
   }
 }
 
-//navigation
 .header {
   .navigation {
     flex: 3;
+    @include u.breakpoint("1000") {
+      display: none;
+    }
     li {
       margin-right: 2.5rem;
     }
   }
 }
 
-//form
+.header {
+  .menu-icon {
+    display: none;
+    @include u.breakpoint("1000") {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
+
 .header {
   form {
     .input {

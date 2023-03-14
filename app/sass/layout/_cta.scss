@@ -1,9 +1,12 @@
+@use "../utils/" as u;
+
 main {
   .call-to-action {
     color: black;
     justify-content: space-between;
     position: relative !important;
     background: #f6ca45;
+
     .cta-body {
       max-width: 420px;
 
@@ -13,6 +16,7 @@ main {
       button {
         padding: 16px 21px;
         margin-right: 10px;
+        border: none;
       }
       span {
         font-size: 0.9rem;
@@ -23,6 +27,10 @@ main {
       position: absolute;
       bottom: 0;
       right: 0;
+
+      @include u.breakpoint("700") {
+        display: none;
+      }
     }
   }
 }

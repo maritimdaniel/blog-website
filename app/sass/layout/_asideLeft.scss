@@ -1,7 +1,11 @@
+@use "../utils/" as u;
 main {
   .aside.left {
     flex: 1;
     margin-right: 3.5rem;
+    @include u.breakpoint("1120") {
+      display: none;
+    }
     div:not(.line) {
       padding: 14px 16px;
       border-radius: 7px;

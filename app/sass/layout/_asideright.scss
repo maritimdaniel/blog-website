@@ -1,7 +1,11 @@
+@use "../utils/" as u;
 main {
   .aside.right {
     flex: 2;
     margin-left: 3.5rem;
+    @include u.breakpoint("1120") {
+      display: none;
+    }
     form {
       position: relative;
       margin-bottom: 1.5rem;
