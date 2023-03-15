@@ -1,0 +1,77 @@
+@use "../utils/" as u;
+.cookie {
+  border: 1px solid #dadada;
+  padding: 36px 20px;
+  width: 100%;
+  max-width: 398px;
+  border-radius: 5px;
+  position: fixed;
+  left: 60%;
+  top: 60%;
+  z-index: 999;
+  background-color: white;
+  transition: all 0.3s;
+  @include u.breakpoint("1120") {
+    left: 55%;
+  }
+  @include u.breakpoint("900") {
+    left: 45%;
+  }
+  @include u.breakpoint("800") {
+    left: 30%;
+  }
+  @include u.breakpoint("700") {
+    top: 70%;
+  }
+  @include u.breakpoint("600") {
+    left: 20%;
+  }
+  @include u.breakpoint("500") {
+    left: 1%;
+  }
+  @include u.breakpoint("400") {
+    max-width: 300px;
+    left: 5%;
+  }
+  .cookie__header {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+  .cookie__body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    a {
+      color: black;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+  .cookie__buttons {
+    @include u.breakpoint("400") {
+      display: flex;
+      flex-direction: column;
+      .decline {
+        margin-top: 0.5rem;
+        margin-left: 0 !important;
+      }
+    }
+    button {
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 7px;
+    }
+    .decline {
+      background: white;
+      border: 1px solid #dadada;
+      margin-left: 0.8rem;
+      padding: 1rem 2.5rem;
+    }
+    .decline:hover {
+      background: #dadada;
+    }
+  }
+}

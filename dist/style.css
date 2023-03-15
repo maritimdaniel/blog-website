@@ -505,4 +505,94 @@ footer .footer__info a:not(a:last-child) {
   footer .footer__info a:not(a:last-child) {
     margin-right: 0.5rem;
   }
+}
+
+.cookie {
+  border: 1px solid #dadada;
+  padding: 36px 20px;
+  width: 100%;
+  max-width: 398px;
+  border-radius: 5px;
+  position: fixed;
+  left: 60%;
+  top: 60%;
+  z-index: 999;
+  background-color: white;
+  transition: all 0.3s;
+}
+@media (max-width: 70em) {
+  .cookie {
+    left: 55%;
+  }
+}
+@media (max-width: 56.25em) {
+  .cookie {
+    left: 45%;
+  }
+}
+@media (max-width: 50em) {
+  .cookie {
+    left: 30%;
+  }
+}
+@media (max-width: 43.75em) {
+  .cookie {
+    top: 70%;
+  }
+}
+@media (max-width: 37.5em) {
+  .cookie {
+    left: 20%;
+  }
+}
+@media (max-width: 31.25em) {
+  .cookie {
+    left: 1%;
+  }
+}
+@media (max-width: 25em) {
+  .cookie {
+    max-width: 300px;
+    left: 5%;
+  }
+}
+.cookie .cookie__header {
+  display: flex;
+  align-items: center;
+}
+.cookie .cookie__header img {
+  margin-right: 0.5rem;
+}
+.cookie .cookie__body {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cookie .cookie__body a {
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media (max-width: 25em) {
+  .cookie .cookie__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .cookie .cookie__buttons .decline {
+    margin-top: 0.5rem;
+    margin-left: 0 !important;
+  }
+}
+.cookie .cookie__buttons button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 7px;
+}
+.cookie .cookie__buttons .decline {
+  background: white;
+  border: 1px solid #dadada;
+  margin-left: 0.8rem;
+  padding: 1rem 2.5rem;
+}
+.cookie .cookie__buttons .decline:hover {
+  background: #dadada;
 }/*# sourceMappingURL=style.css.map */
