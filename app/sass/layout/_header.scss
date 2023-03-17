@@ -33,12 +33,61 @@ header {
     }
   }
 }
+header {
+  .mobile-navigation {
+    display: none;
+    @include u.breakpoint("1000") {
+      display: flex;
+      z-index: 999;
+      flex-direction: column;
+      position: fixed;
+      background-color: ghostwhite;
+      border: 1px solid #f3f5f7;
+      border-radius: 5px;
+      top: 10%;
+      right: 5%;
+      text-align: center;
+      width: 200px;
+      height: auto;
+      padding: 2rem;
+      display: none;
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin: 0;
+        li:not(li:last-child) {
+          margin-bottom: 1rem;
+        }
+        a {
+          color: black;
+        }
+        button {
+          border: none;
+          padding: 0.5rem 0.8rem;
+          img {
+            margin-right: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
 
 .header {
   .menu-icon {
     display: none;
     @include u.breakpoint("1000") {
       display: block;
+      cursor: pointer;
+    }
+  }
+}
+
+header {
+  .close-icon {
+    display: none;
+    @include u.breakpoint("1000") {
       cursor: pointer;
     }
   }

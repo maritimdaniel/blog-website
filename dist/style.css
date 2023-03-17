@@ -109,6 +109,47 @@ header .logo {
   margin-right: 2.5rem;
 }
 
+header .mobile-navigation {
+  display: none;
+}
+@media (max-width: 62.5em) {
+  header .mobile-navigation {
+    display: flex;
+    z-index: 999;
+    flex-direction: column;
+    position: fixed;
+    background-color: ghostwhite;
+    border: 1px solid #f3f5f7;
+    border-radius: 5px;
+    top: 10%;
+    right: 5%;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    padding: 2rem;
+    display: none;
+  }
+  header .mobile-navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  header .mobile-navigation ul li:not(li:last-child) {
+    margin-bottom: 1rem;
+  }
+  header .mobile-navigation ul a {
+    color: black;
+  }
+  header .mobile-navigation ul button {
+    border: none;
+    padding: 0.5rem 0.8rem;
+  }
+  header .mobile-navigation ul button img {
+    margin-right: 0.2rem;
+  }
+}
+
 .header .menu-icon {
   display: none;
 }
@@ -116,6 +157,25 @@ header .logo {
   .header .menu-icon {
     display: block;
     cursor: pointer;
+  }
+}
+@media (max-width: 62.5em) {
+  .header .inactive {
+    display: none;
+  }
+}
+
+header .close-icon {
+  display: none;
+}
+@media (max-width: 62.5em) {
+  header .close-icon {
+    cursor: pointer;
+  }
+}
+@media (max-width: 62.5em) {
+  header .active {
+    display: block;
   }
 }
 
