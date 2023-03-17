@@ -23,9 +23,6 @@ menuBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   mobilemenu.style.display = "none";
-  mobilemenu.classList.add("inactive");
   menuBtn.style.display = "block";
   closeBtn.style.display = "none";
 });
-
-if (window.innerWidth > 1000) mobilemenu.style.display = "none";
