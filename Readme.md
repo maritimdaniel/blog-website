@@ -6,7 +6,7 @@ This is a simple blog website. The design and figma files are from Codewell.
 
 Visit the live website hosted on netlify.
 
-- [Portfolio website](https://codewellblog.netlify.app/)
+- [Blog website](https://codewellblog.netlify.app/)
 
 ## Tech Stack
 
